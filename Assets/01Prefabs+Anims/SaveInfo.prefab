@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1028191181030390599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028191181030390597}
+  - component: {fileID: 1028191181030390596}
+  - component: {fileID: 1028191181030390594}
+  m_Layer: 0
+  m_Name: SaveInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1028191181030390597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028191181030390599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.962456, y: 37.370518, z: 37.616882}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028191181030390596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028191181030390599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02a0e30cc9eb0d49a001b03f0e9e9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SchoolName: "\u9752\u8349\u6E56\u570B\u5C0F"
+  ClassName: "\u56DB0\u4E8C"
+  StuNum: 219004
+  Name: "\u738B\u25CB\u9A30"
+  StageNum: 2
+  StartTime: 
+  EndTime: 
+  isLogin: 1
+  isTestMode: 0
+  BGMOff: 0
+  EffectOff: 0
+  SoundOff: 0
+  WaveTutorialRecord: 
+  Stage1_Skin_AllQuiz: "0_\u842C\u6B72\u5927\u773C\u87F9\u7684\u82B1\u8272@1_\u5F27\u908A\u62DB\u6F6E\u87F9\u7684\u82B1\u8272@2_\u53F0\u7063\u62DB\u6F6E\u87F9\u7684\u82B1\u8272@3_\u77ED\u6307\u548C\u5C1A\u87F9\u7684\u82B1\u8272@4_\u96D9\u6247\u80A1\u7A97\u87F9\u7684\u82B1\u8272@5_\u897F\u65BD\u820C\u7684\u82B1\u8272@6_\u6587\u86E4\u7684\u82B1\u8272@7_\u5927\u7389\u87BA\u7684\u82B1\u8272@8_\u9ED1\u9762\u7435\u9DFA\u7684\u82B1\u8272@9_\u5C16\u5C3E\u9D28\u7684\u82B1\u8272@10_\u5C0F\u767D\u9DFA\u7684\u82B1\u8272@11_\u7D05\u51A0\u6C34\u96DE\u7684\u82B1\u8272@12_\u9AD8\u8E7A\u9D34\u7684\u82B1\u8272"
+  Stage1_SkinQuiz: []
+  Stage1_Shadow_AllQuiz: "0_\u842C\u6B72\u5927\u773C\u87F9\u7684\u526A\u5F71@1_\u5F27\u908A\u62DB\u6F6E\u87F9\u7684\u526A\u5F71@2_\u53F0\u7063\u62DB\u6F6E\u87F9\u7684\u526A\u5F71@3_\u77ED\u6307\u548C\u5C1A\u87F9\u7684\u526A\u5F71@4_\u96D9\u6247\u80A1\u7A97\u87F9\u7684\u526A\u5F71@5_\u897F\u65BD\u820C\u7684\u526A\u5F71@6_\u6587\u86E4\u7684\u526A\u5F71@7_\u5927\u7389\u87BA\u7684\u526A\u5F71@8_\u9ED1\u9762\u7435\u9DFA\u7684\u526A\u5F71@9_\u5C16\u5C3E\u9D28\u7684\u526A\u5F71@10_\u5C0F\u767D\u9DFA\u7684\u526A\u5F71@11_\u7D05\u51A0\u6C34\u96DE\u7684\u526A\u5F71@12_\u9AD8\u8E7A\u9D34\u7684\u526A\u5F71"
+  Stage1_ShadowQuiz: []
+  Stage1_Sound_AllQuiz: "0_\u9ED1\u9762\u7435\u9DFA\u7684\u53EB\u8072@1_\u5C16\u5C3E\u9D28\u7684\u53EB\u8072@2_\u5C0F\u767D\u9DFA\u7684\u53EB\u8072@3_\u7D05\u51A0\u6C34\u96DE\u7684\u53EB\u8072@4_\u9AD8\u8E7A\u9D34\u7684\u53EB\u8072"
+  Stage1_SoundQuiz: []
+  Stage2_Organ_AllQuiz: "0_\u9ED1\u9762\u7435\u9DFA\u7684\u5668\u5B98\u914D\u5C0D@1_\u5C16\u5C3E\u9D28\u7684\u5668\u5B98\u914D\u5C0D@2_\u5C0F\u767D\u9DFA\u7684\u5668\u5B98\u914D\u5C0D@3_\u7D05\u51A0\u6C34\u96DE\u7684\u5668\u5B98\u914D\u5C0D@4_\u9AD8\u8E7A\u9D34\u7684\u5668\u5B98\u914D\u5C0D"
+  Stage2_OrganQuiz: []
+  Stage2_Exercise_AllQuiz: "0_\u9ED1\u9762\u7435\u9DFA\u7684\u904B\u52D5\u65B9\u5F0F@1_\u5C16\u5C3E\u9D28\u7684\u904B\u52D5\u65B9\u5F0F@2_\u5C0F\u767D\u9DFA\u7684\u904B\u52D5\u65B9\u5F0F@3_\u7D05\u51A0\u6C34\u96DE\u7684\u904B\u52D5\u65B9\u5F0F@4_\u9AD8\u8E7A\u9D34\u7684\u904B\u52D5\u65B9\u5F0F "
+  Stage2_ExerciseQuiz: []
+  Stage3_Organ_AllQuiz: "0_\u842C\u6B72\u5927\u773C\u87F9\u7684\u5668\u5B98\u914D\u5C0D@1_\u5F27\u908A\u62DB\u6F6E\u87F9\u7684\u5668\u5B98\u914D\u5C0D@2_\u53F0\u7063\u62DB\u6F6E\u87F9\u7684\u5668\u5B98\u914D\u5C0D@3_\u77ED\u6307\u548C\u5C1A\u87F9\u7684\u5668\u5B98\u914D\u5C0D@4_\u96D9\u6247\u80A1\u7A97\u87F9\u7684\u5668\u5B98\u914D\u5C0D@5_\u897F\u65BD\u820C\u7684\u5668\u5B98\u914D\u5C0D@6_\u6587\u86E4\u7684\u5668\u5B98\u914D\u5C0D@7_\u5927\u7389\u87BA\u7684\u5668\u5B98\u914D\u5C0D"
+  Stage3_OrganQuiz: []
+  Stage3_Exercise_AllQuiz: "0_\u842C\u6B72\u5927\u773C\u87F9\u7684\u904B\u52D5\u65B9\u5F0F@1_\u5F27\u908A\u62DB\u6F6E\u87F9\u7684\u904B\u52D5\u65B9\u5F0F@2_\u53F0\u7063\u62DB\u6F6E\u87F9\u7684\u904B\u52D5\u65B9\u5F0F@3_\u77ED\u6307\u548C\u5C1A\u87F9\u7684\u904B\u52D5\u65B9\u5F0F@4_\u96D9\u6247\u80A1\u7A97\u87F9\u7684\u904B\u52D5\u65B9\u5F0F@5_\u897F\u65BD\u820C\u7684\u904B\u52D5\u65B9\u5F0F@6_\u6587\u86E4\u7684\u904B\u52D5\u65B9\u5F0F@7_\u5927\u7389\u87BA\u7684\u904B\u52D5\u65B9\u5F0F"
+  Stage3_ExerciseQuiz: []
+--- !u!82 &1028191181030390594
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028191181030390599}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 044565dc1f68b9e43b95988e34f270fa, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
