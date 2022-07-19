@@ -9,66 +9,60 @@ using UnityEngine.SceneManagement;
 
 public class Stage1Menu : MonoBehaviour
 {
-    [Header("聲音調整")]
-    public AudioSource EffectSource;
+    [Header("聲音調整")] public AudioSource EffectSource;
     public AudioSource BGMSource, SoundSource;
-    public AudioClip ClickSound,RightSound,WrongSound;
-    [Header("語音")]
-    private bool isPlayed;
+    [Header("狀態音效")] public AudioClip ClickSound, RightSound, WrongSound;
+    [Header("語音語音")] private bool isPlayed;
     //教學
-    public AudioClip  Tu_TitleSound;
-    public AudioClip Tu_GameSound, Tu_FinSound;
-    public AudioClip[] Tu_SubTitleSound = new AudioClip[3];
+    [Header("標題說明")] public AudioClip Tu_TitleSound;
+    [Header("遊戲說明")] public AudioClip Tu_GameSound;
+    [Header("完成觀察")] public AudioClip Tu_FinSound;
+    [Header("生物觀察標題敘述")] public AudioClip[] Tu_SubTitleSound = new AudioClip[3];
     //測驗
-    public AudioClip Test_TitleSound, Test_FinSound;
-    public AudioClip[] Test_HintSound = new AudioClip[2];
+    [Header("測試開始標題")] public AudioClip Test_TitleSound;
+    [Header("完成測驗")] public AudioClip Test_FinSound;
+    [Header("VR測驗教學說明")] public AudioClip[] Test_HintSound = new AudioClip[2];
     //看OFF的Toggle
-    public Toggle BGMOFF, EffectOFF;
-    public GameObject LoadingPage;
+    [Header("設定音效")] public Toggle BGMOFF, EffectOFF;
+    [Header("過場動畫")] public GameObject LoadingPage;
     public string WriteInRecord;
-    public GameObject SettingPage;
+    [Header("設定UI")] public GameObject SettingPage;
     public Transform SettingOriPlace, Setting_SkinPlace;
-    [Header("教學")]
-    public GameObject TutorialModePage;
-    [Header("頁面")]
-    public GameObject Tu_TitlePage;
-    public GameObject Tu_ModePage,Tu_SubTitlePage, Tu_AnimalPage, Tu_GamePage,Tu_EndConPage;
-    public GameObject HomeButton,SettingButton;
+    [Header("教學")] public GameObject TutorialModePage;
+    [Header("頁面")] public GameObject Tu_TitlePage;
+    public GameObject Tu_ModePage, Tu_SubTitlePage, Tu_AnimalPage, Tu_GamePage, Tu_EndConPage;
+    [Header("返回首頁按鈕")] public GameObject HomeButton;
+    [Header("設定按鈕")] public GameObject SettingButton;
     public GameObject[] Tu_AnimalPages;
-    [Header("切換頁面")]
-    public int ModeNum;
+    [Header("切換頁面")] public int ModeNum;
     public int AnimalNum;
     public Text Tu_SubTitleText;
     public string[] Tu_SubTitleStrings = new string[3];
     public Image Tu_SubTitlePic;
     public Sprite[] Tu_SubTitleSprites = new Sprite[3];
-    [Header("切換物種")]
-    public Transform AnimalPlace;
+    [Header("切換物種")] public Transform AnimalPlace;
     public ObjectRotate AnimalRotateSet;
     public GameObject[] AnimalPrefabs = new GameObject[13];
     //僅鳥類
     public GameObject Tu_SoundButton, Tu_OtherAnimalButton;
-    [Header("觀察功能")]
-    public bool isGaming;
+    [Header("觀察功能")] public bool isGaming;
     //文字說明
     public GameObject Tu_DescriptionPage;
     public Text Tu_DescriptionText;
     public string[] Tu_DescriptionStrings = new string[13];
     public AudioClip[] Tu_DescriptionSound = new AudioClip[13];
-    [Header("放大設定")]
-    public Toggle Tu_BigButton;
+    [Header("放大設定")] public Toggle Tu_BigButton;
     public GameObject Tu_SetScalePage;
     //聲音(鳥類)
     public AudioClip[] Tu_BirdSounds = new AudioClip[5];
     public Button Tu_PhotoButton;
     public GameObject Tu_PhotoAnimalPage;
-    [Header("紀錄")]  
-    public string[] TutorialRecords = new string[13];
+    [Header("紀錄")] public string[] TutorialRecords = new string[13];
     public string[] TestRecords = new string[5];
     [Header("測驗")]
     public bool TestFin;
     public GameObject TestModePage;
-    public GameObject TestTitlePage,Test_SkinPage, Test_ShadowPage, Test_SoundPage,TestResultPage, Test_EndConPage,Test_EndFinPage, Test_EndConPage_Skin;
+    public GameObject TestTitlePage, Test_SkinPage, Test_ShadowPage, Test_SoundPage, TestResultPage, Test_EndConPage, Test_EndFinPage, Test_EndConPage_Skin;
     public int TestQuizNum;
     //0：花色、1：剪影、2：叫聲
     public int TestType;
@@ -87,7 +81,7 @@ public class Stage1Menu : MonoBehaviour
     [Header("計算分數")]
     public Transform Test_QuizTextPlace;
     public Transform Test_ScoreTextPlace;
-    public GameObject Test_ScoreItemPrefab,Test_QuizTextPrefab;
+    public GameObject Test_ScoreItemPrefab, Test_QuizTextPrefab;
     public List<string> TestData;
     public List<string> Test_SortData;
     void Start()
@@ -146,7 +140,7 @@ public class Stage1Menu : MonoBehaviour
             //下載配分資料
             StartCoroutine(ReadScoreData());
         }
-        else 
+        else
         {
             for (int i = 0; i < TutorialRecords.Length; i++)
             {
@@ -296,7 +290,7 @@ public class Stage1Menu : MonoBehaviour
                 {
                     Test_EndConPage.SetActive(true);
                 }
-                
+
             }
         }
         else
@@ -306,7 +300,7 @@ public class Stage1Menu : MonoBehaviour
                 AnimalRotateSet.gameObject.SetActive(false);
             }
             Tu_EndConPage.SetActive(true);
-        }    
+        }
     }
     public void Tu_EndCancelBtn()
     {
@@ -344,7 +338,7 @@ public class Stage1Menu : MonoBehaviour
         Save_BasicInfo.Instance.StartTime = DateTime.Now.ToString();
         Tu_TitlePage.SetActive(false);
         Tu_ModePage.SetActive(true);
-        
+
     }
     //選擇種類
     public void Tu_ModeBtn(int Num)
@@ -403,7 +397,7 @@ public class Stage1Menu : MonoBehaviour
                 Destroy(AnimalPlace.GetChild(i).gameObject);
             }
         }
-        AnimalRotateSet.TurnObject = Instantiate(AnimalPrefabs[AnimalNum], AnimalPlace.position, AnimalPlace.rotation,AnimalPlace);
+        AnimalRotateSet.TurnObject = Instantiate(AnimalPrefabs[AnimalNum], AnimalPlace.position, AnimalPlace.rotation, AnimalPlace);
         //鳥類
         if (ModeNum == 2)
         {
@@ -441,7 +435,7 @@ public class Stage1Menu : MonoBehaviour
         //放大按鈕設定
         Tu_SetScalePage.SetActive(false);
         Tu_BigButton.isOn = false;
-        AnimalPlace.localScale = Vector3.one ;
+        AnimalPlace.localScale = Vector3.one;
         Tu_SetScalePage.transform.GetChild(0).GetComponent<Button>().interactable = true;
         Tu_SetScalePage.transform.GetChild(1).GetComponent<Button>().interactable = false;
         //
@@ -509,13 +503,13 @@ public class Stage1Menu : MonoBehaviour
         if (AnimalPlace.localScale.x > 1.9f)
         {
             Tu_SetScalePage.transform.GetChild(0).GetComponent<Button>().interactable = false;
-        }     
+        }
     }
     public void Tu_ScaleDecreaseBtn()
     {
         AnimalPlace.localScale -= Vector3.one * 0.2f;
         Tu_SetScalePage.transform.GetChild(0).GetComponent<Button>().interactable = true;
-        if (AnimalPlace.localScale.x <1.1f)
+        if (AnimalPlace.localScale.x < 1.1f)
         {
             Tu_SetScalePage.transform.GetChild(1).GetComponent<Button>().interactable = false;
         }
@@ -543,7 +537,7 @@ public class Stage1Menu : MonoBehaviour
     }
     void PhotoPageDisAppear()
     {
-       // Tu_PhotoAnimalPage.SetActive(false);
+        // Tu_PhotoAnimalPage.SetActive(false);
         //語音_觀察完畢
         SoundSource.Stop();
         SoundSource.clip = Tu_FinSound;
@@ -630,7 +624,7 @@ public class Stage1Menu : MonoBehaviour
             TestScore = 100 - MinusScore;
             if (TestScore < 60)
             {
-                Test_ScoreResult = "N0_"+ TestScore.ToString();
+                Test_ScoreResult = "N0_" + TestScore.ToString();
             }
             else
             {
@@ -643,11 +637,11 @@ public class Stage1Menu : MonoBehaviour
             {
                 Ans += TestTimer[i] + "@";
             }
-            for (int i = 0; i < TestRecords.Length-1; i++)
+            for (int i = 0; i < TestRecords.Length - 1; i++)
             {
                 Ans += TestRecords[i] + "@";
             }
-            Ans += TestRecords[TestRecords.Length-1];
+            Ans += TestRecords[TestRecords.Length - 1];
             WriteInRecord = Save_BasicInfo.Instance.SchoolName + "@" + Save_BasicInfo.Instance.ClassName + "@" + Save_BasicInfo.Instance.StuNum + "@" + Save_BasicInfo.Instance.Name + "@1@" + Save_BasicInfo.Instance.StartTime + "@" + Save_BasicInfo.Instance.EndTime + "@" + Ans;
             //寫入資料
             StartCoroutine(WriteStudentData());
@@ -778,7 +772,7 @@ public class Stage1Menu : MonoBehaviour
         form.AddField("ColumnNum", "3");
         #region 計算有收集的動物
         string data = "";
-        for (int i = 0; i < TutorialRecords.Length-1; i++)
+        for (int i = 0; i < TutorialRecords.Length - 1; i++)
         {
             if (TutorialRecords[i] == "true")
             {
