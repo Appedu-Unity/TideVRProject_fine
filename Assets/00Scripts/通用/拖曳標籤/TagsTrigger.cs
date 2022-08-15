@@ -41,8 +41,8 @@ public class TagsTrigger : MonoBehaviour
     //如果移到其他地方會回到起始設定的位置
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Untagged")
+            Debug.Log(other.gameObject.tag);
         {
             if (other.gameObject.name != "DragRange")
             {
